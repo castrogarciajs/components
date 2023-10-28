@@ -1,5 +1,5 @@
 import { component$, useSignal } from '@builder.io/qwik'
-import "./counter.css"
+import './counter.css'
 
 export const Counter = component$(() => {
   const count = useSignal(0)
