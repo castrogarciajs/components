@@ -51,5 +51,14 @@
     "@builder.io/qwik": "1.2.15"
   },
   "author": "castrogarciajs",
-  "license": "MIT"
+  "license": "MIT",
+  "directories": {
+    "doc": "doc",
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/castrogarciajs/test_runner.git",
+    "directory": "qwikui"
+  }
 }
