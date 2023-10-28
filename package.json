@@ -1,5 +1,5 @@
 {
-  "name": "@qwik-org/ui",
+  "name": "@qwikui-org/ui",
   "version": "0.0.2",
   "description": "Create a reusable Qwik component library",
   "main": "./lib/index.qwik.mjs",
