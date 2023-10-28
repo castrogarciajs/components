@@ -17,6 +17,7 @@
     "lib-types"
   ],
   "type": "module",
+  "private": false,
   "scripts": {
     "changeset.publish": "pnpm run lint && pnpm run test && pnpm run build && changeset publish",
     "changeset.version": "changeset version",
@@ -58,7 +59,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/castrogarciajs/test_runner.git",
+    "url": "git+https://github.com/castrogarciajs/qwikui.git",
     "directory": "qwikui"
   }
 }
