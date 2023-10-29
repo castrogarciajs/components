@@ -1,47 +1,31 @@
-# Qwik Library ⚡️
+# @qwikui-org/ui
 
-- [Qwik Docs](https://qwik.builder.io/)
-- [Discord](https://qwik.builder.io/chat)
-- [Qwik on GitHub](https://github.com/BuilderIO/qwik)
-- [@QwikDev](https://twitter.com/QwikDev)
-- [Vite](https://vitejs.dev/)
-- [Partytown](https://partytown.builder.io/)
-- [Mitosis](https://github.com/BuilderIO/mitosis)
-- [Builder.io](https://www.builder.io/)
+## 0.2.0
 
----
+### Minor Changes
 
-## Project Structure
+*   332ba6c: # Migrate to esbuild
 
-Inside your project, you'll see the following directories and files:
+    Migration to esbuild for transpilation CSS bundle.
 
-```
-├── public/
-│   └── ...
-└── src/
-    ├── components/
-    │   └── ...
-    └── index.ts
-```
+    ### Reason
 
-- `src/components`: Recommended directory for components.
+    Postcss is require too many module for css transpilation
 
-- `index.ts`: The entry point of your component library, make sure all the public components are exported from this file.
+## 0.1.1
 
-## Development
+### Patch Changes
 
-Development mode uses [Vite's development server](https://vitejs.dev/). For Qwik during development, the `dev` command will also server-side render (SSR) the output. The client-side development modules are loaded by the browser.
+* a7f9eb2: Fix CSS Import pkg
 
-```
-pnpm dev
-```
+## 0.1.0
 
-> Note: during dev mode, Vite will request many JS files, which does not represent a Qwik production build.
+### Minor Changes
 
-## Production
+* 3a279b3: Add new CSS module
 
-The production build should generate the production build of your component library in (./lib) and the typescript type definitions in (./lib-types).
+## 0.0.4
 
-```
-pnpm build
-```
+### Patch Changes
+
+* 8b5b5d9: Initial Commit
