@@ -1,5 +1,4 @@
-import { Counter } from './index'
-import { Logo } from './components/logo/logo'
+import Button from './components/button'
 
 export default () => {
   return (
@@ -9,8 +8,8 @@ export default () => {
         <title>Qwik Blank App</title>
       </head>
       <body>
-        <Logo />
-        <Counter />
+        <h1>Hello Qwik UI</h1>
+        <Button>Playground</Button>
       </body>
     </>
   )
