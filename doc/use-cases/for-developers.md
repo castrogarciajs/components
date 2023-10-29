@@ -15,6 +15,7 @@ Sed posuere consectetur est at lobortis. Integer posuere erat a ante venenatis d
 ```
 string | ComponentClass<any, any> | FunctionComponent<any>
 ```
+
 {% endtab %}
 
 {% tab title="Second tab" %}
