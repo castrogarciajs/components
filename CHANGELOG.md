@@ -1,5 +1,17 @@
 # @qwikui-org/ui
 
+## 0.2.0
+
+### Minor Changes
+
+- 332ba6c: # Migrate to esbuild
+
+  Migration to esbuild for transpilation CSS bundle.
+
+  ## Reason
+
+  Postcss is require too many module for css transpilation
+
 ## 0.1.1
 
 ### Patch Changes
