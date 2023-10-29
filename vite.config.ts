@@ -17,7 +17,6 @@ export default defineConfig(() => {
         fileName: (format) => `index.qwik.${format === 'es' ? 'mjs' : 'cjs'}`,
       },
       rollupOptions: {
-        // externalize deps that shouldn't be bundled into the library
         external: [
           /^node:.*/,
           ...excludeAll(dependencies),
