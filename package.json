@@ -5,16 +5,23 @@
   "main": "./lib/index.qwik.mjs",
   "qwik": "./lib/index.qwik.mjs",
   "types": "./lib-types/index.d.ts",
+  "style": "./styles.css",
   "exports": {
     ".": {
       "import": "./lib/index.qwik.mjs",
       "require": "./lib/index.qwik.cjs",
       "types": "./lib-types/index.d.ts"
+    },
+    "./styles.css": {
+      "import": "./styles.css",
+      "require": "./styles.css",
+      "default": "./styles.css"
     }
   },
   "files": [
     "lib",
-    "lib-types"
+    "lib-types",
+    "styles.css"
   ],
   "type": "module",
   "private": false,
@@ -26,7 +33,7 @@
     "lint.types": "tsc --noEmit",
     "fmt.check": "prettier --check .",
     "build.lib": "vite build --mode lib",
-    "build.css": "postcss ./src/main.css -o styles.css",
+    "build.css": "postcss ./src/theme/index.css -o ./styles.css",
     "build": "qwik build",
     "start": "vite --open --mode ssr",
     "lint": "eslint \"src/**/*.ts*\"",
@@ -59,10 +66,6 @@
   },
   "author": "castrogarciajs",
   "license": "MIT",
-  "directories": {
-    "doc": "doc",
-    "lib": "lib"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/castrogarciajs/qwikui.git",

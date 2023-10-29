@@ -4,7 +4,7 @@ import {
 } from '@builder.io/qwik/server'
 import { manifest } from '@qwik-client-manifest'
 import Root from './root'
-import './main.css'
+import './theme/index.css'
 
 export default function (opts: RenderToStreamOptions) {
   return renderToStream(<Root />, {

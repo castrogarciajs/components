@@ -3,6 +3,7 @@
 /lib
 /lib-types
 /server
+/theme
 
 # Development
 node_modules
