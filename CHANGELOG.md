@@ -1,5 +1,11 @@
 # @qwikui-org/ui
 
+## 0.1.1
+
+### Patch Changes
+
+- a7f9eb2: Fix CSS Import pkg
+
 ## 0.1.0
 
 ### Minor Changes
