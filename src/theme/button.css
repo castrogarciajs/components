@@ -1,12 +1,4 @@
 .button {
-  padding: var(--size-2);
-  box-shadow: var(--shadow-2);
-  background-color: var(--blue-4);
-  color: var(--gray-0);
-  border: none;
-  font-family: var(--font-sans);
-
-  &:hover {
-    cursor: pointer;
-  }
+  background-color: blue;
+  color: white;
 }
