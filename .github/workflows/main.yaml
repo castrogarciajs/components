@@ -19,4 +19,6 @@ jobs:
           cache: pnpm
 
       - run: pnpm install --frozen-lockfile
-      - run: pnpm run ci
+      - run: pnpm run lint
+      - run: pnpm run fmt.check
+      - run: pnpm run build
