@@ -3,8 +3,6 @@
 /lib
 /lib-types
 /server
-styles.css
-styles.css.map
 
 # Development
 node_modules
