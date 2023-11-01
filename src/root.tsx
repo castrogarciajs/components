@@ -1,3 +1,4 @@
+import { Button } from './components/button'
 import { Counter } from './components/counter/counter'
 import { Logo } from './components/logo/logo'
 
@@ -11,6 +12,7 @@ export default () => {
       <body>
         <Logo />
         <Counter />
+        <Button protoType='qw-button'>Click</Button>
       </body>
     </>
   )
