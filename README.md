@@ -1,22 +1,6 @@
-# Qwik UI⚡️
+<h1>Qwik UI</h1>
 
 ---
-
-## Project Structure
-
-Inside your project, you'll see the following directories and files:
-
-```
-├── doc/
-│   └── ...
-└── src/
-    ├── components/
-    │   └── ...
-    └── index.ts
-```
-
-- `src/components`: Recommended directory for components.
-- `index.ts`: The entry point of your component library, make sure all the public components are exported from this file.
 
 ## Development
 
