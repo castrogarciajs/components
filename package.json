@@ -28,9 +28,11 @@
   "scripts": {
     "changeset.publish": "pnpm run lint && pnpm run test && pnpm run build.publish && changeset publish",
     "changeset.version": "changeset version",
-    "build.publish": "pnpm run build && pnpm run build.css",
+    "playground.dev": "cd playground && pnpm run dev",
+    "build.publish": "pnpm run build.test",
     "build.types": "tsc --emitDeclarationOnly",
     "lint.types": "tsc --noEmit",
+    "build.test": "esbuild --minify --bundle ./src/index.ts --outfile=./dist/index.js --minify",
     "fmt.check": "prettier --check .",
     "build.lib": "vite build --mode lib",
     "build.css": "esbuild --bundle ./src/theme/index.css --outfile=./styles.css --minify",

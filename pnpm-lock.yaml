@@ -4,52 +4,70 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-devDependencies:
-  '@builder.io/qwik':
-    specifier: 1.2.15
-    version: 1.2.15(undici@5.26.0)
-  '@changesets/cli':
-    specifier: 2.26.2
-    version: 2.26.2
-  '@types/eslint':
-    specifier: 8.44.4
-    version: 8.44.4
-  '@types/node':
-    specifier: 20.8.4
-    version: 20.8.4
-  '@typescript-eslint/eslint-plugin':
-    specifier: 6.7.5
-    version: 6.7.5(@typescript-eslint/parser@6.7.5)(eslint@8.51.0)(typescript@5.2.2)
-  '@typescript-eslint/parser':
-    specifier: 6.7.5
-    version: 6.7.5(eslint@8.51.0)(typescript@5.2.2)
-  autoprefixer:
-    specifier: 10.4.16
-    version: 10.4.16(postcss@8.4.31)
-  esbuild:
-    specifier: 0.19.5
-    version: 0.19.5
-  eslint:
-    specifier: 8.51.0
-    version: 8.51.0
-  eslint-plugin-qwik:
-    specifier: 1.2.15
-    version: 1.2.15(eslint@8.51.0)
-  prettier:
-    specifier: 3.0.3
-    version: 3.0.3
-  typescript:
-    specifier: 5.2.2
-    version: 5.2.2
-  undici:
-    specifier: 5.26.0
-    version: 5.26.0
-  vite:
-    specifier: 4.4.11
-    version: 4.4.11(@types/node@20.8.4)
-  vite-tsconfig-paths:
-    specifier: 4.2.1
-    version: 4.2.1(typescript@5.2.2)(vite@4.4.11)
+importers:
+  .:
+    devDependencies:
+      '@builder.io/qwik':
+        specifier: 1.2.15
+        version: 1.2.15(undici@5.26.0)
+      '@changesets/cli':
+        specifier: 2.26.2
+        version: 2.26.2
+      '@types/eslint':
+        specifier: 8.44.4
+        version: 8.44.4
+      '@types/node':
+        specifier: 20.8.4
+        version: 20.8.4
+      '@typescript-eslint/eslint-plugin':
+        specifier: 6.7.5
+        version: 6.7.5(@typescript-eslint/parser@6.7.5)(eslint@8.51.0)(typescript@5.2.2)
+      '@typescript-eslint/parser':
+        specifier: 6.7.5
+        version: 6.7.5(eslint@8.51.0)(typescript@5.2.2)
+      autoprefixer:
+        specifier: 10.4.16
+        version: 10.4.16(postcss@8.4.31)
+      esbuild:
+        specifier: 0.19.5
+        version: 0.19.5
+      eslint:
+        specifier: 8.51.0
+        version: 8.51.0
+      eslint-plugin-qwik:
+        specifier: 1.2.15
+        version: 1.2.15(eslint@8.51.0)
+      prettier:
+        specifier: 3.0.3
+        version: 3.0.3
+      typescript:
+        specifier: 5.2.2
+        version: 5.2.2
+      undici:
+        specifier: 5.26.0
+        version: 5.26.0
+      vite:
+        specifier: 4.4.11
+        version: 4.4.11(@types/node@20.8.4)
+      vite-tsconfig-paths:
+        specifier: 4.2.1
+        version: 4.2.1(typescript@5.2.2)(vite@4.4.11)
+
+  playground:
+    dependencies:
+      '@builder.io/qwik':
+        specifier: 1.2.6
+        version: 1.2.6(undici@5.26.0)
+      '@qwikui-org/ui':
+        specifier: workspace:*
+        version: link:..
+    devDependencies:
+      typescript:
+        specifier: 5.0.2
+        version: 5.0.2
+      vite:
+        specifier: 4.4.5
+        version: 4.4.5(@types/node@20.8.4)
 
 packages:
   /@aashutoshrathi/word-wrap@1.2.6:
@@ -114,6 +132,20 @@ packages:
       csstype: 3.1.2
       undici: 5.26.0
     dev: true
+
+  /@builder.io/qwik@1.2.6(undici@5.26.0):
+    resolution:
+      {
+        integrity: sha512-Cm1sLAimML55I5T1RI80R1lLgI4cnSeQt5obQtcMKa8wMmf2/luEyQaEkeN2fV3sp/gaVXCfAuKaddXK6ONdww==,
+      }
+    engines: { node: '>=16.8.0 <18.0.0 || >=18.11' }
+    hasBin: true
+    peerDependencies:
+      undici: ^5.14.0
+    dependencies:
+      csstype: 3.1.2
+      undici: 5.26.0
+    dev: false
 
   /@changesets/apply-release-plan@6.1.4:
     resolution:
@@ -933,7 +965,6 @@ packages:
         integrity: sha512-JUFJad5lv7jxj926GPgymrWQxxjPYuJNiNjNMzqT+HiuP6Vl3dk5xzG+8sTX96np0ZAluvaMzPsjhHZ5rNuNQQ==,
       }
     engines: { node: '>=14' }
-    dev: true
 
   /@humanwhocodes/config-array@0.11.13:
     resolution:
@@ -1668,7 +1699,6 @@ packages:
       {
         integrity: sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==,
       }
-    dev: true
 
   /csv-generate@3.4.3:
     resolution:
@@ -4228,6 +4258,15 @@ packages:
       is-typed-array: 1.1.12
     dev: true
 
+  /typescript@5.0.2:
+    resolution:
+      {
+        integrity: sha512-wVORMBGO/FAs/++blGNeAVdbNKtIh1rbBL2EyQ1+J9lClJ93KiiKe8PmFIVdXhHcyv44SL9oglmfeSsndo0jRw==,
+      }
+    engines: { node: '>=12.20' }
+    hasBin: true
+    dev: true
+
   /typescript@5.2.2:
     resolution:
       {
@@ -4264,7 +4303,6 @@ packages:
     engines: { node: '>=14.0' }
     dependencies:
       '@fastify/busboy': 2.0.0
-    dev: true
 
   /universalify@0.1.2:
     resolution:
@@ -4331,6 +4369,45 @@ packages:
     resolution:
       {
         integrity: sha512-ksNZJlkcU9b0lBwAGZGGaZHCMqHsc8OpgtoYhsQ4/I2v5cnpmmmqe5pM4nv/4Hn6G/2GhTdj0DhZh2e+Er1q5A==,
+      }
+    engines: { node: ^14.18.0 || >=16.0.0 }
+    hasBin: true
+    peerDependencies:
+      '@types/node': '>= 14'
+      less: '*'
+      lightningcss: ^1.21.0
+      sass: '*'
+      stylus: '*'
+      sugarss: '*'
+      terser: ^5.4.0
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+      less:
+        optional: true
+      lightningcss:
+        optional: true
+      sass:
+        optional: true
+      stylus:
+        optional: true
+      sugarss:
+        optional: true
+      terser:
+        optional: true
+    dependencies:
+      '@types/node': 20.8.4
+      esbuild: 0.18.20
+      postcss: 8.4.31
+      rollup: 3.29.4
+    optionalDependencies:
+      fsevents: 2.3.3
+    dev: true
+
+  /vite@4.4.5(@types/node@20.8.4):
+    resolution:
+      {
+        integrity: sha512-4m5kEtAWHYr0O1Fu7rZp64CfO1PsRGZlD3TAB32UmQlpd7qg15VF7ROqGN5CyqN7HFuwr7ICNM2+fDWRqFEKaA==,
       }
     engines: { node: ^14.18.0 || >=16.0.0 }
     hasBin: true

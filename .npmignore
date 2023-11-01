@@ -1,6 +1,6 @@
 *
 !package.json
-!lib/**/*
+!dist/**/*
 !lib-types/**/*
 !CHANGELOG.md
 !README.md
