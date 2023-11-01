@@ -1,2 +1,2 @@
-import "./theme/index.css"
-export * as Button from "./components/button"
+import './theme/index.css'
+export * as Button from './components/button'
