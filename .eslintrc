@@ -20,7 +20,14 @@
       "jsx": true
     }
   },
-  "ignorePatterns": ["node_modules/", "lib-types/", "vite.config.ts"],
+  "ignorePatterns": [
+    "node_modules/",
+    "lib-types/",
+    "vite.config.ts",
+    "lib",
+    "dist",
+    "playground"
+  ],
   "plugins": ["@typescript-eslint"],
   "rules": {
     "@typescript-eslint/no-explicit-any": "off",
