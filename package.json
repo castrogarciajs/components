@@ -33,7 +33,7 @@
     "lint.types": "tsc --noEmit",
     "fmt.check": "prettier --check .",
     "build.lib": "vite build --mode lib",
-    "build.css": "esbuild --bundle ./src/theme/index.css --outfile=./styles.css",
+    "build.css": "esbuild --bundle ./src/theme/index.css --outfile=./styles.css --minify",
     "build": "qwik build",
     "start": "vite --open --mode ssr",
     "lint": "eslint \"src/**/*.ts*\"",
