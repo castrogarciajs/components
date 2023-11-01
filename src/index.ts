@@ -1,2 +1,2 @@
-import './theme/index.css'
-export * as Button from './components/button'
+export { Logo } from './components/logo/logo'
+export { Counter } from './components/counter/counter'
