@@ -6,7 +6,7 @@ export default () => {
     <>
       <head>
         <meta charSet='utf-8' />
-        <title>Qwik Blank App</title>
+        <title>Qwik UI</title>
       </head>
       <body>
         <Logo />
