@@ -24,11 +24,10 @@
   ],
   "type": "module",
   "scripts": {
-    "changeset.publish": "pnpm run build && pnpm run build.css && pnpm run build.types && changeset publish",
+    "changeset.publish": "pnpm run build && pnpm run build.types && changeset publish",
     "changeset.version": "changeset version",
     "build.types": "tsc --emitDeclarationOnly",
     "lint.types": "tsc --noEmit",
-    "build.css": "esbuild src/theme/index.css --bundle --format=esm --outfile=styles.css --minify --sourcemap",
     "fmt.check": "prettier --check .",
     "build": "esbuild src/index.ts --bundle --format=esm --outfile=lib/index.js --minify --sourcemap",
     "lint": "eslint --ext .ts,.tsx .",
