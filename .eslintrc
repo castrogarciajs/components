@@ -8,5 +8,7 @@
     "ignorePatterns": ["doc"],
     "extends": [],
 
-    "rules": {}
+    "rules": {
+      "semi": ["error", "never"]
+    }
   }
