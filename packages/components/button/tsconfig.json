@@ -3,8 +3,6 @@
 		"rootDirs": [
 			".",
 		],
-		"declaration": true,
-		"declarationDir": "types",
 		"allowJs": true,
 		"checkJs": true,
 		"esModuleInterop": true,
