@@ -1,7 +1,6 @@
-import {commonColors} from "./common";
-
+import { commonColors } from './common'
 
 const colors = {
-    ...commonColors
+  ...commonColors,
 }
-export {colors, commonColors}
+export { colors, commonColors }

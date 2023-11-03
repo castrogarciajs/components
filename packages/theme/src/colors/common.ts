@@ -1,6 +1,5 @@
-import {blue} from "./blue";
-
+import { blue } from './blue'
 
 export const commonColors = {
-    blue,
+  blue,
 }
