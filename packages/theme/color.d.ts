@@ -1,1 +1,1 @@
-export * from "./dist/colors";
+export * from './dist/colors'
