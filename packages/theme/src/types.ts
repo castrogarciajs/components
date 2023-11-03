@@ -50,5 +50,5 @@ export const spacingScaleKeys = [
 ]
 
 export const mappedSpacingScaleKeys = spacingScaleKeys.map(
-  (key) => `unit-${key}`
+  (key) => `unit-${key}`,
 )
