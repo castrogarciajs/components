@@ -1,6 +1,6 @@
 {
   "name": "@svelteui-org/theme",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Theme for svelte UI",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -22,8 +22,6 @@
   ],
   "files": [
     "dist",
-    "config.js",
-    "config.d.ts",
     "plugin.js",
     "plugin.d.ts",
     "colors.js",
@@ -34,8 +32,14 @@
   },
   "author": "",
   "license": "MIT",
+  "dependencies": {
+    "color": "4.2.3",
+    "tailwind-variants": "0.1.18"
+  },
   "devDependencies": {
+    "@types/color": "3.0.3",
     "typescript": "5.2.2",
+    "tailwindcss": "3.3.5",
     "tsup": "7.2.0"
   },
   "peerDependencies": {

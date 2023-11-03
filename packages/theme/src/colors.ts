@@ -1,1 +1,1 @@
-export const colors = ['orange', 'white', 'black', 'blue', 'yellow', 'zinc']
+export * from './colors/index'
