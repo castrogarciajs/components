@@ -1,5 +1,5 @@
 {
-  "name": "@svelte/ui",
+  "name": "@svelteui-org/theme",
   "version": "1.0.0",
   "description": "Theme for svelte UI",
   "main": "./dist/index.js",
@@ -7,15 +7,38 @@
   "module": "./dist/index.mjs",
   "type": "module",
   "scripts": {
-    "build.dev": "tsup ./src/index.ts --format cjs,esm --dts --watch",
-    "build": "tsup ./src/index.ts --format cjs,esm --dts",
+    "build.dev": "tsup src --format cjs,esm --dts --watch",
+    "build": "tsup src --format cjs,esm --dts",
     "lint": "tsc --notEmit"
   },
-  "keywords": [],
+  "keywords": [
+    "theme",
+    "theming",
+    "design",
+    "ui",
+    "components",
+    "classNames",
+    "css"
+  ],
+  "files": [
+    "dist",
+    "config.js",
+    "config.d.ts",
+    "plugin.js",
+    "plugin.d.ts",
+    "colors.js",
+    "colors.d.ts"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "",
   "license": "MIT",
   "devDependencies": {
     "typescript": "5.2.2",
     "tsup": "7.2.0"
+  },
+  "peerDependencies": {
+    "tailwindcss": "*"
   }
 }
