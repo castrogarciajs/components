@@ -5,6 +5,7 @@
       "es2021": true,
       "node": true
     },
+    "ignorePatterns": ["doc"],
     "extends": [],
 
     "rules": {}
