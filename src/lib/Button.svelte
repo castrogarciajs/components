@@ -1,16 +1,8 @@
-<button class="component-button">
-    <slot></slot>
-</button>
+<svelte:component this={component}>
+    <slot />
+</svelte:component>
 
-<style>
-    .component-button {
-        background-color: #0000FF;
-        padding: 1rem;
-        border: none;
-        border-radius: 0.5rem;
-        color: white;
-        font-size: 1rem;
-        font-weight: bold;
-        cursor: pointer;
-    }
-</style>
+<script>
+  /** @type {import('svelte').SvelteComponent} */
+    export let component;
+</script>
