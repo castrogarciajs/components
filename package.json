@@ -1,11 +1,12 @@
 {
   "name": "@vacations/components",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "svelte": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "type": "module",
   "author": "castrogarcijas",
   "license": "MIT",
+  "private": false,
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -28,7 +29,8 @@
     "check.watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
     "test": "pnpm run test:integration && pnpm run test:unit",
     "test.e2e": "playwright test",
-    "test.unit": "vitest"
+    "test.unit": "vitest",
+    "fmt": "prettier . --write --cache"
   },
   "devDependencies": {
     "@playwright/test": "1.39.0",

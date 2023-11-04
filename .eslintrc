@@ -1,14 +1,14 @@
 {
-    "root": true,
-    "env": {
-      "browser": true,
-      "es2021": true,
-      "node": true
-    },
-    "ignorePatterns": ["doc", "node_modules", "dist"],
-    "extends": [],
+  "root": true,
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "ignorePatterns": ["doc", "node_modules", "dist"],
+  "extends": [],
 
-    "rules": {
-      "semi": ["error", "never"]
-    }
+  "rules": {
+    "semi": ["error", "never"]
   }
+}
