@@ -1,6 +1,6 @@
 {
   "name": "@vacations/components",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "svelte": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "type": "module",
