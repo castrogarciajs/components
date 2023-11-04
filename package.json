@@ -1,5 +1,5 @@
 {
-	"name": "jkjk",
+	"name": "@components/dev",
 	"version": "0.0.1",
 	"svelte": "./dist/index.js",
 	"types": "./dist/index.d.ts",
