@@ -1,6 +1,6 @@
 {
 	"name": "@pkg-org/components",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"svelte": "./dist/index.js",
 	"types": "./dist/index.d.ts",
 	"type": "module",
