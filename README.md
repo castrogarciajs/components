@@ -1,8 +1,8 @@
-# Svelte UI
+# Svelte ui
 
 ## Introduction
 
-Svelte UI made with ❤, Inspired by nextui
+Svelte UI made with ❤
 
 ## Getting Started
 
